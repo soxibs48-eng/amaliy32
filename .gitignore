@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
+generate_assets.py
+crop_preview.py
+parse_figma.py
+scratch/
+.system_generated/

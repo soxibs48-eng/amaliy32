@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180" width="100%" height="100%" id="hypnotic-eyes">
+  <defs>
+    <!-- Radial Iris Gradient (warm greenish hazel / gold like in Figma design) -->
+    <radialGradient id="iris-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2D3B18"/>
+      <stop offset="45%" stop-color="#7B8B34"/>
+      <stop offset="80%" stop-color="#B2BE55"/>
+      <stop offset="100%" stop-color="#4F5D1A"/>
+    </radialGradient>
+    <filter id="eye-shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- LEFT EYE GROUP -->
+  <g id="left-eye-group" transform="translate(40, 20)">
+    <!-- Eyebrow -->
+    <path d="M 10 32 C 45 6 120 4 165 24" fill="none" stroke="#121212" stroke-width="7" stroke-linecap="round"/>
+    <!-- Upper crease -->
+    <path d="M 22 46 C 60 32 110 32 152 44" fill="none" stroke="#222222" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Sclera (Eye White with shadow) -->
+    <path d="M 15 65 C 55 25 125 25 165 65 C 125 105 55 105 15 65 Z" fill="#FFFFFF" stroke="#121212" stroke-width="4.5" stroke-linejoin="round" filter="url(#eye-shadow)"/>
+    <path d="M 15 65 C 55 28 125 28 165 65" fill="none" stroke="#E0E0DB" stroke-width="6"/>
+
+    <!-- Left Eye Pupil/Iris Container (Target for JS tracking) -->
+    <g id="left-iris" transform="translate(90, 65)">
+      <!-- Iris -->
+      <circle cx="0" cy="0" r="24" fill="url(#iris-grad)" stroke="#1B240B" stroke-width="2"/>
+      <!-- Iris texture lines -->
+      <g stroke="#182008" stroke-width="1" opacity="0.65">
+        <line x1="-18" y1="0" x2="-6" y2="0"/>
+        <line x1="6" y1="0" x2="18" y2="0"/>
+        <line x1="0" y1="-18" x2="0" y2="-6"/>
+        <line x1="0" y1="6" x2="0" y2="18"/>
+        <line x1="-12" y1="-12" x2="-4" y2="-4"/>
+        <line x1="4" y1="4" x2="12" y2="12"/>
+        <line x1="12" y1="-12" x2="4" y2="-4"/>
+        <line x1="-4" y1="4" x2="-12" y2="12"/>
+      </g>
+      <!-- Pupil -->
+      <circle cx="0" cy="0" r="11" fill="#0C0D0A"/>
+      <!-- Highlights -->
+      <circle cx="-5" cy="-5" r="4" fill="#FFFFFF" opacity="0.95"/>
+      <circle cx="4" cy="4" r="2" fill="#FFFFFF" opacity="0.7"/>
+    </g>
+
+    <!-- Lower Lid crease -->
+    <path d="M 30 85 C 65 100 115 100 150 85" fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- RIGHT EYE GROUP -->
+  <g id="right-eye-group" transform="translate(320, 20)">
+    <!-- Eyebrow -->
+    <path d="M 15 24 C 60 4 135 6 170 32" fill="none" stroke="#121212" stroke-width="7" stroke-linecap="round"/>
+    <!-- Upper crease -->
+    <path d="M 28 44 C 70 32 120 32 158 46" fill="none" stroke="#222222" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Sclera -->
+    <path d="M 15 65 C 55 25 125 25 165 65 C 125 105 55 105 15 65 Z" fill="#FFFFFF" stroke="#121212" stroke-width="4.5" stroke-linejoin="round" filter="url(#eye-shadow)"/>
+    <path d="M 15 65 C 55 28 125 28 165 65" fill="none" stroke="#E0E0DB" stroke-width="6"/>
+
+    <!-- Right Eye Pupil/Iris Container (Target for JS tracking) -->
+    <g id="right-iris" transform="translate(90, 65)">
+      <!-- Iris -->
+      <circle cx="0" cy="0" r="24" fill="url(#iris-grad)" stroke="#1B240B" stroke-width="2"/>
+      <!-- Iris texture lines -->
+      <g stroke="#182008" stroke-width="1" opacity="0.65">
+        <line x1="-18" y1="0" x2="-6" y2="0"/>
+        <line x1="6" y1="0" x2="18" y2="0"/>
+        <line x1="0" y1="-18" x2="0" y2="-6"/>
+        <line x1="0" y1="6" x2="0" y2="18"/>
+        <line x1="-12" y1="-12" x2="-4" y2="-4"/>
+        <line x1="4" y1="4" x2="12" y2="12"/>
+        <line x1="12" y1="-12" x2="4" y2="-4"/>
+        <line x1="-4" y1="4" x2="-12" y2="12"/>
+      </g>
+      <!-- Pupil -->
+      <circle cx="0" cy="0" r="11" fill="#0C0D0A"/>
+      <!-- Highlights -->
+      <circle cx="-5" cy="-5" r="4" fill="#FFFFFF" opacity="0.95"/>
+      <circle cx="4" cy="4" r="2" fill="#FFFFFF" opacity="0.7"/>
+    </g>
+
+    <!-- Lower Lid crease -->
+    <path d="M 30 85 C 65 100 115 100 150 85" fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

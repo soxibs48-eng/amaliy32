@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selected Artworks &amp; Projects — Roger Haus Portfolio</title>
+  <meta name="description" content="Explore selected illustrations, fine art drops, comic series, and monographs by Roger Haus.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-brand" aria-label="Roger Haus Homepage">
+        <img src="assets/logo.svg" alt="Roger Haus Logo" class="logo-icon">
+      </a>
+      <div class="header-subtitle">
+        Illustrator &amp; Art Director Living in Barcelona
+      </div>
+      <nav class="header-nav">
+        <a href="works.html" class="nav-link active">Works</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" aria-hidden="true">
+    <a href="works.html" class="nav-link">Works</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <main class="container">
+    <section class="page-hero">
+      <h1 class="page-title">SELECTED WORKS ARCHIVE</h1>
+      <p class="page-lead">
+        A comprehensive collection of surrealist paintings, subconscious ink drawings, collaborative digital projects, and limited print editions.
+      </p>
+    </section>
+
+    <!-- Filters -->
+    <div class="portfolio-filters" role="tablist">
+      <button class="filter-btn active" data-filter="all">[ ALL ]</button>
+      <button class="filter-btn" data-filter="surrealism">[ SURREALISM ]</button>
+      <button class="filter-btn" data-filter="nft">[ NFT / OPENSEA ]</button>
+      <button class="filter-btn" data-filter="prints">[ EDITIONS &amp; PRINTS ]</button>
+      <button class="filter-btn" data-filter="comics">[ COMICS ]</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="portfolio-grid" style="margin-bottom: 90px;">
+      
+      <!-- 1. Exquisite Workers -->
+      <article class="work-card full-width" data-category="surrealism nft" data-artwork-id="exquisite-workers">
+        <div class="work-card-media">
+          <img src="assets/exquisite-workers.png" alt="Exquisite Workers Project">
+        </div>
+        <div class="work-card-meta">
+          <div class="title">EXQUISITE WORKERS™</div>
+          <div class="subtitle">GLOBAL SURREALIST PROJECT &bull; OPENSEA FRONTPAGE</div>
+        </div>
+      </article>
+
+      <!-- 2. Staggered Row: Lotus Goddess & Girl with Black Cat -->
+      <div class="work-row-split">
+        <article class="work-card" data-category="surrealism nft" data-artwork-id="lotus-goddess">
+          <div class="work-card-media">
+            <img src="assets/lotus-goddess.png" alt="Lotus Goddess Digital Fine Art">
+          </div>
+          <div class="work-card-meta">
+            <div class="title">LOTUS GODDESS</div>
+            <div class="subtitle">1 OF 1 DROP &bull; METAPHYSICAL ART</div>
+          </div>
+        </article>
+
+        <article class="work-card stagger-right" data-category="surrealism prints" data-artwork-id="girl-black-cat">
+          <div class="work-card-media">
+            <img src="assets/girl-black-cat.png" alt="Girl with the Black Cat">
+          </div>
+          <div class="work-card-meta">
+            <div class="title">GIRL WITH THE BLACK CAT</div>
+            <div class="subtitle">HAI COLLECTION &bull; VIRAL ICON</div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 3. Cosmic Steed -->
+      <div class="work-row-split">
+        <article class="work-card" data-category="surrealism prints" data-artwork-id="cosmic-steed">
+          <div class="work-card-media">
+            <img src="assets/cosmic-steed.png" alt="Cosmic Steed Animation">
+          </div>
+          <div class="work-card-meta">
+            <div class="title">COSMIC STEED</div>
+            <div class="subtitle">ANIMATION &bull; MOTION DIRECTION</div>
+          </div>
+        </article>
+
+        <article class="work-card stagger-right" data-category="prints" data-artwork-id="art-book">
+          <div class="work-card-media">
+            <img src="assets/art-book.png" alt="Monograph Book">
+          </div>
+          <div class="work-card-meta">
+            <div class="title">ROGER HAUS MONOGRAPH</div>
+            <div class="subtitle">LIMITED EDITION &bull; 100 COPIES</div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 4. Hypnagogias Master Canvas -->
+      <article class="work-card full-width" data-category="surrealism prints" data-artwork-id="hypnagogia-large">
+        <div class="work-card-media">
+          <img src="assets/hypnagogia-large.png" alt="Hypnagogias Series Master Canvas">
+        </div>
+        <div class="work-card-meta">
+          <div class="title">HYPNAGOGIAS SERIES</div>
+          <div class="subtitle">NOCTURNAL SUBCONSCIOUS INK MESH</div>
+        </div>
+      </article>
+
+      <!-- 5. Comic Strip -->
+      <article class="work-card" style="max-width: 650px; margin: 0 auto;" data-category="comics" data-artwork-id="comic-strip">
+        <div class="work-card-media">
+          <img src="assets/comic-strip.png" alt="One More Comic For The Trip">
+        </div>
+        <div class="work-card-meta">
+          <div class="title">ONE MORE COMIC FOR THE TRIP</div>
+          <div class="subtitle">6-PANEL INDIE COMIC</div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="modal-overlay" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-media">
+        <img id="modal-img" src="" alt="">
+      </div>
+      <div class="modal-body">
+        <h3 id="modal-title" class="modal-title"></h3>
+        <div id="modal-tags" class="modal-tags"></div>
+        <p id="modal-desc" class="modal-description"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">&copy; 2021&ndash;2026 ROGER HAUS. ALL RIGHTS RESERVED.</div>
+      <nav class="footer-nav">
+        <a href="works.html">Works</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://instagram.com/rogerhaus" target="_blank" class="footer-social-link">IG</a>
+        <a href="https://twitter.com/rogerhaus" target="_blank" class="footer-social-link">TW</a>
+        <a href="https://behance.net/rogerhaus" target="_blank" class="footer-social-link">BE</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

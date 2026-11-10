@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Inquiries — Roger Haus Studio</title>
+  <meta name="description" content="Get in touch with Roger Haus for art direction, commercial illustration, gallery exhibitions, licensing, and NFT collaborations.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-brand" aria-label="Roger Haus Homepage">
+        <img src="assets/logo.svg" alt="Roger Haus Logo" class="logo-icon">
+      </a>
+      <div class="header-subtitle">
+        Illustrator &amp; Art Director Living in Barcelona
+      </div>
+      <nav class="header-nav">
+        <a href="index.html#portfolio" class="nav-link">Works</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" aria-hidden="true">
+    <a href="index.html#portfolio" class="nav-link">Works</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <main class="container">
+    <section class="page-hero" style="text-align: center;">
+      <h1 class="page-title">NOW IT'S YOUR TURN</h1>
+      <p class="page-lead" style="margin: 0 auto;">
+        Available for selected art direction commissions, museum exhibitions, brand collaborations, and editorial projects.
+      </p>
+
+      <!-- Eyes Widget -->
+      <div class="eyes-container" style="max-width: 380px; margin: 30px auto;" title="Looking at you">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180" width="100%" height="100%" id="hypnotic-eyes">
+          <defs>
+            <radialGradient id="iris-grad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#2D3B18"/>
+              <stop offset="45%" stop-color="#7B8B34"/>
+              <stop offset="80%" stop-color="#B2BE55"/>
+              <stop offset="100%" stop-color="#4F5D1A"/>
+            </radialGradient>
+            <filter id="eye-shadow">
+              <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.12"/>
+            </filter>
+          </defs>
+          <g id="left-eye-group" transform="translate(40, 20)">
+            <path d="M 10 32 C 45 6 120 4 165 24" fill="none" stroke="#121212" stroke-width="7" stroke-linecap="round"/>
+            <path d="M 22 46 C 60 32 110 32 152 44" fill="none" stroke="#222222" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M 15 65 C 55 25 125 25 165 65 C 125 105 55 105 15 65 Z" fill="#FFFFFF" stroke="#121212" stroke-width="4.5" stroke-linejoin="round" filter="url(#eye-shadow)"/>
+            <g id="left-iris" transform="translate(90, 65)">
+              <circle cx="0" cy="0" r="24" fill="url(#iris-grad)" stroke="#1B240B" stroke-width="2"/>
+              <circle cx="0" cy="0" r="11" fill="#0C0D0A"/>
+              <circle cx="-5" cy="-5" r="4" fill="#FFFFFF" opacity="0.95"/>
+            </g>
+          </g>
+          <g id="right-eye-group" transform="translate(320, 20)">
+            <path d="M 15 24 C 60 4 135 6 170 32" fill="none" stroke="#121212" stroke-width="7" stroke-linecap="round"/>
+            <path d="M 28 44 C 70 32 120 32 158 46" fill="none" stroke="#222222" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M 15 65 C 55 25 125 25 165 65 C 125 105 55 105 15 65 Z" fill="#FFFFFF" stroke="#121212" stroke-width="4.5" stroke-linejoin="round" filter="url(#eye-shadow)"/>
+            <g id="right-iris" transform="translate(90, 65)">
+              <circle cx="0" cy="0" r="24" fill="url(#iris-grad)" stroke="#1B240B" stroke-width="2"/>
+              <circle cx="0" cy="0" r="11" fill="#0C0D0A"/>
+              <circle cx="-5" cy="-5" r="4" fill="#FFFFFF" opacity="0.95"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <p style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; margin-bottom: 12px;">
+          Direct Email:
+        </p>
+        <a href="mailto:hello@rogerhaus.com" class="contact-email-link">hello@rogerhaus.com</a>
+      </div>
+    </section>
+
+    <!-- Interactive Commission Inquiry Form -->
+    <div class="contact-form-wrap">
+      <h3 style="font-family: var(--font-heading); font-size: 1.6rem; text-transform: uppercase; margin-bottom: 24px; text-align: center;">
+        Send a Direct Inquiry
+      </h3>
+      <form id="inquiry-form" onsubmit="event.preventDefault(); alert('Thank you! Your dream message has been sent to Roger Haus studio.'); this.reset();">
+        <div class="form-group">
+          <label class="form-label" for="sender-name">Your Name / Organization *</label>
+          <input type="text" id="sender-name" class="form-control" placeholder="e.g. Salvador or MoMA Design" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="sender-email">Email Address *</label>
+          <input type="email" id="sender-email" class="form-control" placeholder="yourname@domain.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="project-type">Project Scope</label>
+          <select id="project-type" class="form-control">
+            <option value="art-direction">Art Direction &amp; Branding</option>
+            <option value="editorial">Editorial Illustration / Book Cover</option>
+            <option value="nft">NFT Collection / Web3 Surrealism</option>
+            <option value="exhibition">Gallery Exhibition / Acquisition</option>
+            <option value="other">Other Involuntary Dream Inquiries</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="project-msg">Tell Me Your Dream *</label>
+          <textarea id="project-msg" class="form-control" placeholder="Describe the concept, timeline, and vision..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn" style="width: 100%;">
+          Send Message &#9993;
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">&copy; 2021&ndash;2026 ROGER HAUS. ALL RIGHTS RESERVED.</div>
+      <nav class="footer-nav">
+        <a href="index.html#portfolio">Works</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://instagram.com/rogerhaus" target="_blank" class="footer-social-link">IG</a>
+        <a href="https://twitter.com/rogerhaus" target="_blank" class="footer-social-link">TW</a>
+        <a href="https://behance.net/rogerhaus" target="_blank" class="footer-social-link">BE</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
